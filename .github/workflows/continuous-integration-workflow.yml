@@ -35,13 +35,17 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: Install and Build CI
         if: success()
         run: |
           npm install && npm run build
+
+      - name: Load user deploy
+        run: |
+          git config --global user.email "martins86@gmail.com" && git config --global user.name "martins86"
+
       - name: Preper and deploy on GitHub Pages
         if: success()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm run pre-deploy && npm run deploy
+          npm run predeploy && npm run deploy
