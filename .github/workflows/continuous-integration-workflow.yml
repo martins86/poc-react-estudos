@@ -41,5 +41,7 @@ jobs:
           npm install && npm run build
       - name: Preper and deploy on GitHub Pages
         if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run pre-deploy && npm run deploy
