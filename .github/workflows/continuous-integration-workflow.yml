@@ -38,7 +38,7 @@ jobs:
       - name: Install and Build CI
         if: success()
         run: |
-          npm install && npm run build:ci
+          npm install && npm run build
       - name: Preper and deploy on GitHub Pages
         if: success()
         run: |
