@@ -43,7 +43,7 @@ jobs:
 
       - name: Load user deploy
         run: |
-          git config --global user.email "martins86@gmail.com" && git config --global user.name "martins86"
+          git config --global user.email "martins86@gmail.com" && git config --global user.name "Thiago Martins de Freitas"
 
       - name: Preper and deploy on GitHub Pages
         if: success()
