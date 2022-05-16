@@ -19,10 +19,10 @@ const SignUp = () => {
 
     const handleSingUp = () => {
         if (!email || !emailConf || !password) {
-            setError('Preencha todos os campos');
+            setError('* Preencha todos os campos');
             return;
         } else if (email !== emailConf) {
-            setError('Os e-mails não são iguais');
+            setError('* Os e-mails não são iguais');
             return;
         }
 
