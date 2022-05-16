@@ -5,8 +5,6 @@ Estudos com o ReactJS
 
 ## Comandos Usados:
 
----
-
 ### Instalando o Create App do react
 ```
 npm install -g create-react-app
@@ -52,8 +50,6 @@ npm install cypress --save-dev
 <br><br>
 
 ## Usando Mocks
-
----
 
 - Mock api json server - [my-json-server](https://my-json-server.typicode.com/) <br>
 
