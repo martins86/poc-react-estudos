@@ -22,9 +22,10 @@ npx create-react-app ./
 
 - Styled Components - [styled-components](https://styled-components.com/) <br>
 - React Router Dom - [react-router-dom](https://reactrouter.com/) <br>
+- React Icons - [react-icons](https://github.com/react-icons/react-icons) <br>
 
 ```
-npm install styled-components react-router-dom
+npm install styled-components react-router-dom react-icons
 ```
 
 <br>
@@ -35,17 +36,10 @@ npm install styled-components react-router-dom
 
 ```
 npm install -g jest
-npm install jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer --save-dev
+npm install jest --save-dev
 ```
 <br>
 
-### Instalando o Cypress ( para os testes E2E )
-
-- Cypress - [cypress](https://www.cypress.io/) <br>
-
-```
-npm install cypress --save-dev
-```
 
 <br><br>
 
