@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
 
         if (userToken && usersStorage) {
             const hasUser = JSON.parse(usersStorage).filter(
-                (user) => user.email === JSON.parse(userToken).email
+                (beUser) => beUser.email === JSON.parse(userToken).email
             );
 
             if (hasUser) setUser(hasUser[0]);
@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
     const signIn = (email, password) => {
         const usersStorage = JSON.parse(localStorage.getItem('users-db'));
 
-        const hasUser = usersStorage?.filter((user) => user.email === email);
+        const hasUser = usersStorage?.filter((beUser) => beUser.email === email);
 
         if (hasUser?.length) {
             if (hasUser[0].email === email && hasUser[0].password === password) {
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
     const signUp = (email, password) => {
         const usersStorage = JSON.parse(localStorage.getItem('users-db'));
 
-        const hasUser = usersStorage?.filter((user) => user.email === email);
+        const hasUser = usersStorage?.filter((beUser) => beUser.email === email);
 
         if (hasUser?.length) {
             return 'Já tem uma conta com esse E-mail';
