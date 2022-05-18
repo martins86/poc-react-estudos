@@ -7,5 +7,3 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 20px;
 `;
-
-export const Title = styled.h2``;

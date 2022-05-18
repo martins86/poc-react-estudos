@@ -5,7 +5,7 @@ export const Container = styled.div`
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 24px;
+    padding: 15px 24px 35px;
     width: 100%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4df5b+47,f2f2f2+100 */
     background: #b4df5b; /* Old browsers */
