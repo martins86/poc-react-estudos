@@ -15,7 +15,19 @@ export const Container = styled.div`
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4df5b', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 `;
 
+export const Content = styled.div`
+    max-width: 1120px;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 95px;
+`;
+
 export const Header = styled.h1``;
+
 export const Title = styled.div`
     padding-top: 20px;
     color: #fff;
