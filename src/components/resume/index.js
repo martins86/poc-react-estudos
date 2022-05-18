@@ -10,12 +10,13 @@ import Card from '../card';
 
 import * as C from './styles';
 
-const Resume = () => {
+const Resume = ({ income, expense, total }) => {
+
     return (
         <C.Container>
-            <Card Title="Entradas" Icon={FaRegArrowAltCircleUp} Value="1000" />
-            <Card Title="Saídas" Icon={FaRegArrowAltCircleDown} Value="1000" />
-            <Card Title="Total" Icon={FaDollarSign} Value="1000" />
+            <Card Title="Entradas" Icon={FaRegArrowAltCircleUp} Value={income} />
+            <Card Title="Saídas" Icon={FaRegArrowAltCircleDown} Value={expense} />
+            <Card Title="Total" Icon={FaDollarSign} Value={total} />
         </C.Container>
     );
 };
