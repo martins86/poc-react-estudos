@@ -38,7 +38,7 @@ export const RadioGroup = styled.div`
     }
 `;
 
-export const Input = styled.input``;
+export const InputRadio = styled.input``;
 
 export const ButtonContent = styled.div`
     display: flex;

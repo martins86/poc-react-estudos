@@ -38,14 +38,17 @@ const SignIn = () => {
             <C.Content>
                 <Input
                     type='email'
+                    name="email"
                     placeholder='Digite seu E-mail'
-                    value={email}
+                    value={email || ''}
+                    autoComplete='on'
                     onChange={(e) => [setEmail(e.target.value), setError('')]}
                 />
                 <Input
                     type='password'
+                    name="password"
                     placeholder='Digite sua Senha'
-                    value={password}
+                    value={password || ''}
                     onChange={(e) => [setPassword(e.target.value), setError('')]}
                 />
                 <C.LabelError>{error}</C.LabelError>

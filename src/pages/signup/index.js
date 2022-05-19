@@ -43,18 +43,21 @@ const SignUp = () => {
             <C.Content>
                 <Input
                     type='email'
+                    name="email"
                     placeholder='Digite seu E-mail'
                     value={email}
                     onChange={(e) => [setEmail(e.target.value), setError('')]}
                 />
                 <Input
                     type='email'
+                    name="email-conf"
                     placeholder='Confirme seu E-mail'
                     value={emailConf}
                     onChange={(e) => [setEmailConf(e.target.value), setError('')]}
                 />
                 <Input
                     type='password'
+                    name='password'
                     placeholder='Digite sua Senha'
                     value={password}
                     onChange={(e) => [setPassword(e.target.value), setError('')]}

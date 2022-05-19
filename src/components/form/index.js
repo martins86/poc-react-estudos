@@ -41,23 +41,24 @@ function Form({handleAdd}) {
                 <C.Label>Descrição</C.Label>
                 <Input
                     value={desc}
+                    name="desc"
                     type="text"
-                    placeholder="Digite aqui..."
+                    placeholder="Transação realizada..."
                     onChange={(e) => setDesc(e.target.value)} />
             </C.InputContent>
             <C.InputContent>
                 <C.Label>Valor</C.Label>
                 <Input
                     value={amount}
+                    name="amount"
                     type="number"
                     min="1"
-                    step="0.01"
-                    placeholder="0"
+                    placeholder="0.00"
                     onKeyDown={(e) => symbolsArr.includes(e.key) && e.preventDefault()}
-                    onChange={(e) => setAmount(e.target.value.replace(/\D/g, ""))} />
+                    onChange={(e) => setAmount(e.target.value)} />
             </C.InputContent>
             <C.RadioGroup>
-                <C.Input
+                <C.InputRadio
                     type="radio"
                     id="rIncome"
                     defaultChecked
@@ -65,7 +66,7 @@ function Form({handleAdd}) {
                     onChange={() => setExpense(!isExpense)}
                 />
                 <C.Label htmlFor="rIncome">Entrada</C.Label>
-                <C.Input
+                <C.InputRadio
                     type="radio"
                     id="rExpenses"
                     name="group1"

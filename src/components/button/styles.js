@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Button = styled.button`
     background-color: #046ee5;
-    outline: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
