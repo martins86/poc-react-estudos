@@ -30,7 +30,7 @@ npm install styled-components react-router-dom react-icons
 
 <br>
 
-### Instalando o Jest ( para os testes unitários )
+### Instalando o Jest no React
 
 - Jest - [jest](https://jestjs.io/pt-BR/) <br>
 
