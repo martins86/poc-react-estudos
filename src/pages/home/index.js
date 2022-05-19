@@ -5,6 +5,7 @@ import Resume from '../../components/resume';
 import Form from '../../components/form';
 
 import * as C from './styles';
+import Table from '../../components/table';
 
 const Home = () => {
     const dataStorage = localStorage.getItem('transactions');
@@ -43,11 +44,22 @@ const Home = () => {
         localStorage.setItem('transactions', JSON.stringify(newArrayTransactions));
     };
 
+    const showTable = () => {
+        if (transactionList?.length > 0) {
+            return <Table transactionList={transactionList} setTransactionList={setTransactionList} />;
+        }
+    }
+
     return (
         <C.Container>
             <Header />
             <Resume income={income} expense={expense} total={total} />
             <Form handleAdd={handleAdd} />
+            <>
+                {
+                    showTable()
+                }
+            </>
         </C.Container>
     );
 };

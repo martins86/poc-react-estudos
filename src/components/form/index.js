@@ -16,8 +16,10 @@ function Form({handleAdd}) {
     const handleSave = () => {
         if (!desc || !amount) {
             alert("Informe a descrição e o valor!");
+            return;
         } else if (amount < 1) {
             alert("O valor tem que ser positivo!");
+            return;
         }
 
         const transaction = {
@@ -40,7 +42,7 @@ function Form({handleAdd}) {
                 <Input
                     value={desc}
                     type="text"
-                    placeholder="Descrição breve..."
+                    placeholder="Digite aqui..."
                     onChange={(e) => setDesc(e.target.value)} />
             </C.InputContent>
             <C.InputContent>

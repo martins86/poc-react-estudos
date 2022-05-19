@@ -14,9 +14,9 @@ const Resume = ({ income, expense, total }) => {
 
     return (
         <C.Container>
-            <Card Title="Entradas" Icon={FaRegArrowAltCircleUp} Value={income} />
-            <Card Title="Saídas" Icon={FaRegArrowAltCircleDown} Value={expense} />
-            <Card Title="Total" Icon={FaDollarSign} Value={total} />
+            <Card Title="Entradas" Icon={FaRegArrowAltCircleUp} Color="green" Value={income} />
+            <Card Title="Saídas" Icon={FaRegArrowAltCircleDown} Color="red" Value={expense} />
+            <Card Title="Total" Icon={FaDollarSign} Color="darkgreen" Value={total} />
         </C.Container>
     );
 };

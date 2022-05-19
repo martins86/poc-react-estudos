@@ -27,7 +27,8 @@ export const InputContent = styled.div`
 export const RadioGroup = styled.div`
     display: flex;
     align-items: center;
-    width: 210px;
+    width: 220px;
+    margin-top: 20px;
 
     input {
         margin-left: 20px;
@@ -37,11 +38,9 @@ export const RadioGroup = styled.div`
     }
 `;
 
-export const Input = styled.input`
-    outline: none;
-`;
+export const Input = styled.input``;
 
 export const ButtonContent = styled.div`
     display: flex;
-    padding: 15px
+    padding-top: 20px;
 `;
